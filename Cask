@@ -42,7 +42,6 @@
 (depends-on "scss-mode")
 
 ;; Ruby
-(depends-on "enh-ruby-mode" :git "https://github.com/zenspider/enhanced-ruby-mode.git")
 (depends-on "git-modes")
 (depends-on "ruby-electric")
 (depends-on "ruby-block")
