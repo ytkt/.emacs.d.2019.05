@@ -8,3 +8,6 @@
             (lambda ()
               (set-face-background 'erb-face "black")
               (set-face-background 'erb-exec-face "black")))
+
+;; yasnippets-rails
+(yas/load-directory "~/.emacs.d/snippets/yasnippets-rails")
