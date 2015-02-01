@@ -49,3 +49,7 @@
 
 ;; Rails
 (depends-on "rinari")
+
+
+;; JavaScript
+(depends-on "js2-mode")
