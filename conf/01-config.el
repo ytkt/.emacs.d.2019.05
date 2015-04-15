@@ -13,11 +13,11 @@
 ;(setq auto-sabe-file-name-transforms
 ;         `((".*" ,temporary-file-directory t)))
 
-;; バックアップとオートセーブファイルを~/.emacs.d/backups/へ集める
+;; バックアップとオートセーブファイルを~/.emacs.d/backup/へ集める
 (add-to-list 'backup-directory-alist
-                         (cons "." "~/.emacs.d/backups/"))
+                         (cons "." "~/.emacs.d/backup/"))
 (setq auto-save-file-name-transforms
-      `((".*" ,(expand-file-name "~/.emacs.d/backups/") t)))
+      `((".*" ,(expand-file-name "~/.emacs.d/backup/") t)))
 
 ;; create backup file in ~/.emacs.d/backup
 (setq backup-directory-alist
