@@ -63,3 +63,11 @@
  :branch "develop"
  :files ("*.el" "phpcmp-index-of-*"))
 
+
+;; Android
+(depends-on "android-mode")
+;; ajc-java-complete
+(depends-on "auto-java-complete"
+ :git "https://github.com/emacs-java/auto-java-complete.git"
+ :branch "master"
+ :files ("*.el" "Tags.java" "Install"))
