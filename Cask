@@ -12,6 +12,9 @@
 (depends-on "multiple-cursors")
 (depends-on "wgrep")
 (depends-on "exec-path-from-shell")
+(depends-on "ag")
+(depends-on "wgrep")
+(depends-on "wgrep-ag")
 
 ;; Appearance
 (depends-on "color-theme-tango")
