@@ -3,7 +3,6 @@
 (source marmalade)
 
 ;; Setup
-(depends-on "auto-install")
 (depends-on "init-loader")
 
 (depends-on "anzu")
