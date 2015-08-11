@@ -53,11 +53,6 @@
 
 ;; PHP
 (depends-on "php-mode")
-;; php-completion
-(depends-on "php-completion"
- :git "https://github.com/suzuki/php-completion.git"
- :branch "develop"
- :files ("*.el" "phpcmp-index-of-*"))
 
 
 ;; Android
