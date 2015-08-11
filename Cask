@@ -24,11 +24,6 @@
 (depends-on "flycheck")
 (depends-on "redo+")
 
-
-;; Git
-(depends-on "git-gutter-fringe+")
-(depends-on "git-modes" :git "https://github.com/magit/git-modes.git")
-
 ;; Keybind
 (depends-on "smartrep")
 
@@ -44,7 +39,6 @@
 (depends-on "scss-mode")
 
 ;; Ruby
-(depends-on "git-modes")
 (depends-on "ruby-electric")
 (depends-on "ruby-block")
 (depends-on "rhtml-mode")
@@ -69,7 +63,7 @@
 ;; Android
 (depends-on "android-mode")
 ;; ajc-java-complete
-(depends-on "auto-java-complete"
- :git "https://github.com/emacs-java/auto-java-complete.git"
- :branch "master"
- :files ("*.el" "Tags.java" "Install"))
+;(depends-on "auto-java-complete"
+; :git "https://github.com/emacs-java/auto-java-complete.git"
+; :branch "master"
+; :files ("*.el" "Tags.java" "Install"))
