@@ -45,7 +45,8 @@
 
 ;; Rails
 (depends-on "rinari")
-
+(depends-on "slim-mode")
+(depends-on "rspec-mode")
 
 ;; JavaScript
 (depends-on "js2-mode")
@@ -62,3 +63,6 @@
 ; :git "https://github.com/emacs-java/auto-java-complete.git"
 ; :branch "master"
 ; :files ("*.el" "Tags.java" "Install"))
+
+;; Swift
+(depends-on "swift-mode")
