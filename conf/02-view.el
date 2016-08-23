@@ -31,13 +31,30 @@
 ;; menu-barを非表示
 (menu-bar-mode 0)
 
-;;; 表示・修飾に関する設定 ------------------------------
-;;(when (require 'color-theme nil t)
+;; 表示・修飾に関する設定 ------------------------------
+(when (require 'color-theme nil t)
   ;; テーマを読み込むための設定
-;;  (color-theme-initialize)
+  (color-theme-initialize)
   ;; テーマをhoberに変更する
-;;  (color-theme-hober))
+  (color-theme-hober))
 
 ;; 折り返ししない
 (setq-default truncate-partial-width-windows t)
 (setq-default truncate-lines t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 編集行を目立たせる（現在行をハイライト表示する）
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defface hlline-face
+  '((((class color)
+      (background dark))
+     (:background "dark slate gray"))
+    (((class color)
+      (background light))
+     (:background "ForestGreen"))
+    (t
+     ()))
+  "*Face used by hl-line.")
+(setq hl-line-face 'hlline-face)
+(setq hl-line-face 'underline) ; 下線
+(global-hl-line-mode)
