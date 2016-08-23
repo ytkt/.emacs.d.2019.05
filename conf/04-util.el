@@ -12,3 +12,4 @@
 
 ;; 保存時に行末スペースを削除
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(setq require-final-newline t)

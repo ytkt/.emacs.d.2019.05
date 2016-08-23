@@ -44,3 +44,6 @@
 ;;(require 'redo+)
 ;; C-. にredoを割り当てる
 (global-set-key (kbd "C-/") 'redo)
+
+;; ファイルの最後に改行を入れる
+(setq require-final-newline t)
